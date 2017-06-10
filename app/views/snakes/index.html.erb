@@ -1,0 +1,14 @@
+<% @snakes.each do |snake| %>
+
+<div>
+  <h2> Name: <a href="/snakes/<%= snake.id %>"> <%= snake.name %> Age: <%= snake.age %></a></h2>
+</div>
+<div>
+  <img src="<%= snake.image %>">
+</div>
+<div>
+  <h2> Species: <%= snake.species %>
+  </h2>
+</div>
+
+<% end %>
